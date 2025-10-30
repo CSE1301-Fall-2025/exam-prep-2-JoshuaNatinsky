@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // NOT SOLVED
 
 import java.util.Scanner;
 
@@ -13,8 +13,15 @@ public class Q04 {
 	array.
 	 */
 	public static double[] fillDoubleArray (int n, Scanner in) {
-		return null; //fix me
+		double arr[] = new double[n];
+
+		for (int i = 0; i < n; i++){
+			arr[i] = in.nextDouble();
+		}
+
+		return arr;
 	}
+
 
 	/*
 	We wish to make a program that draws user-defined polygons. You should first request the user to specify
@@ -24,7 +31,16 @@ public class Q04 {
 	 */
 	public static void main ( String[] args ) {
 		Scanner in = new Scanner ( System .in );
-		//use StdDraw.polygon and fillDoubleArray
+		int n = in.nextInt();
+		if (n < 3) {
+			System.err.println("Number of sides must be at least 3.");
+			in.close();
+			return;
+		}
+		double arrX [] = fillDoubleArray(n, in);
+		double arrY [] = fillDoubleArray(n, in);
+		StdDraw.filledPolygon(arrX, arrY);
+		in.close();
 	}
 
 }

@@ -15,8 +15,8 @@ public class Q02 {
 	
 	public static int c(int z) {
 		System.out.println( "C" ) ;
-		int w = a( z ) ;
-		w = w + b( z ) ;
+		int w = a( z ) ; 
+		w = w + b( z ) ; // 6 + 4
 		return w;
 	}
 	
@@ -33,3 +33,8 @@ public class Q02 {
 		System.out.println(n) ;
 	}
 }
+
+//C
+//A
+//B
+//10

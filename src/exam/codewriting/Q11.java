@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // Solved
 
 import java.util.Scanner;
 
@@ -21,7 +21,14 @@ public class Q11 {
 
 	 */
 	public static int sumEvens(int[] a) {
-		return 0; //fix me
+		int sum = 0;
+		for (int i : a){
+			if (i%2==0){
+				sum+=i;
+			}
+		}
+		
+		return sum; //fix me
 	}
 
 	public static void main ( String[] args ) {

@@ -34,12 +34,27 @@ public class Q11 {
 
 		//part 3
 		int [] c = {2, 3, 7, 1, 3, -1};
-		int x = c [2];
+		int x = c [2]; //x=-4
 		while (x != 2) {
 			x = right (x);
-			x = right (x);
-			x -= left (c, x);
+			x = right (x); //5
+			x -= left (c, x); //2
 			System .out. println (x);
 		}
 	}
 }
+
+//3        //Right
+//1
+
+//1    i=3  x=3
+//7
+//9    i=5  x=5
+//3
+
+//3    x=7  //Right
+//3
+//1    x=3
+//-4
+//-1   x=-4
+//2

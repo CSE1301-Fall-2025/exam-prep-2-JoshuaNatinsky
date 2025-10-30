@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // Solved
 
 import java.util.Scanner;
 
@@ -15,7 +15,10 @@ public class Q07 {
 	*/
 	
 	public static int rollingSum (int n ) {
-		return 0; //fix me
+		if (n==0){
+			return 0;
+		}
+		return n + rollingSum(n-1);
 	}
 	
 	public static void main ( String[] args ) {

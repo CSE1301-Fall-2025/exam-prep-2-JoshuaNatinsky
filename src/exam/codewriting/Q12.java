@@ -1,11 +1,25 @@
-package exam.codewriting;
+package exam.codewriting; // SOLVED
 
 import edu.princeton.cs.introcs.StdDraw;
 
 public class Q12 {
 
 	public static void rDraw ( double xCtr , double yCtr , double size ) {
-		//your code here
+		if (size <= .001 ){
+			return;
+		}
+		if (size > .05){
+			StdDraw.square(xCtr, yCtr, size);
+		}
+		else{
+			StdDraw.circle(xCtr, yCtr, size);
+			
+		}
+
+		rDraw(xCtr-size, yCtr+size, size/2); // Top left
+		rDraw(xCtr+size, yCtr-size, size/2); // Bottom right
+
+
 	}
 
 	public static void main(String[] args) {

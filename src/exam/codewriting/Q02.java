@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // Solved
 
 import edu.princeton.cs.introcs.StdDraw;
 
@@ -13,7 +13,19 @@ public class Q02 {
 	*
 	**/
 	public static void dashedLine(double x) {
+		double y1 = 0;
+		double y2 = 0.02;
+
+		dashedLineHelp(x, y1, y2);
+	}
+
+	public static void dashedLineHelp (double x, double y1, double y2){
+		if (y2 >= 1){
+			return;
+		}
 		
+		StdDraw.line(x, y1, x, y2);
+		dashedLineHelp(x, y1+0.04, y2+0.04);
 	}
 
 	public static void main(String[] args) {

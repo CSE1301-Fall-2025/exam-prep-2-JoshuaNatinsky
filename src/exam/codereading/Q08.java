@@ -19,7 +19,15 @@ public class Q08 {
 
 		String [] val1 = {"E","T","I","D","R","G","A"};
 		System .out. println ( select (val1 , 1, 1));
-		
+		System.out.println();
 		System .out. println ( select (val1 , 4, 4));
 	}
 }
+
+// T   Next = 4
+// E
+
+// R   Next = 2, count = 3
+// I   Next = 1, count = 2
+// T   Next = 4, count = 1
+//     Next = 2, count = 0

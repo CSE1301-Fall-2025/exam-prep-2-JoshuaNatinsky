@@ -17,6 +17,19 @@ public class Q05 {
 		//What is the output of the following?
 
 		m2(2, 0);
+		System.out.println();
 		m2(2, 4);
 	}
 }
+
+//X : 2
+//X : 0
+//X : 0
+//X : 2
+
+//X : 2
+//X : 2
+//X : 0
+//X : 0
+//X : 2
+//X : 2

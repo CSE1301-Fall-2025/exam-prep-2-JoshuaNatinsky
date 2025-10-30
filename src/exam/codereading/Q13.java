@@ -14,13 +14,13 @@ public class Q13 {
 		//What will get printed?
 
 		//part 1
-		int x = angle (3, 4);
-		int y = turn (7);
+		int x = angle (3, 4); //4
+		int y = turn (7);  //0
 		System.out.println ( angle (x, y ));
 
 		//part 2
 		for ( int i = 3; i < 7; i += 2) {
-			int z = turn (i * 3);
+			int z = turn (i * 3); //0
 			System .out. println ( angle (4, z ));
 		}
 
@@ -29,8 +29,24 @@ public class Q13 {
 		int w = 3;
 		while (v < 5) {
 			System .out. println (w);
-			v = angle (v, w);
-			w = turn (w);
+			v = angle (v, w); //v=5
+			w = turn (w); // w=2
 		}
 	}
 }
+
+//7
+//4
+//5
+
+//6    i=3
+//7
+//4    i=5
+//5
+
+//3
+//5
+//0
+//2
+//1
+//4

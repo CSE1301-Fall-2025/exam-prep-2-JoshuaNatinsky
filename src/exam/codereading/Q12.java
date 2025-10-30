@@ -16,6 +16,13 @@ public class Q12 {
 		//Use the substitution method to show the computation of
 		//the following:
 		
-		foo(3);
+		System.out.println(foo(3));
 	}
 }
+
+
+// foo(3) = 2 foo(-3) = 2*4 = 8
+// foo(-3) = foo(-2) +1 = 3+1 = 4
+// foo(-2) = foo(-1) +1 = 2+1 = 3
+// foo(-1) = foo(0) +1 = 1+1 = 2
+// foo(0) = 1

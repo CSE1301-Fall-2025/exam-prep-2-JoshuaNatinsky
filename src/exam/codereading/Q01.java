@@ -22,3 +22,7 @@ public class Q01 {
 		System.out.println(y) ;
 	}
 }
+
+// B
+// 4
+// 3

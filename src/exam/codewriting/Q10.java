@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // Solved
 
 import java.util.Scanner;
 
@@ -16,11 +16,17 @@ public class Q10 {
 	Complete the method. You may use either iteration or recursion.
 	 */
 	public static int repeat (String text, int n) {
-		return 0; //fix me
+		if (n==0){
+			return 0;
+		}
+
+		System.out.print(text);
+		return repeat(text, n-1); //fix me
 	}
 
 	public static void main ( String[] args ) {
 		repeat("hi", 5);
+		System.out.println();
 		repeat("bye", 3);
 	}
 

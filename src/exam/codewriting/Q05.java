@@ -1,4 +1,4 @@
-package exam.codewriting;
+package exam.codewriting; // Solved
 
 import java.util.Scanner;
 
@@ -17,14 +17,42 @@ public class Q05 {
 	You should assume that the array given as an input could be any size, and your method should work
 	appropriately. It is not necessary to use recursion for this problem. Complete the method below:
 	*/
-	public static int countValue (int[] a, int findMe ) {
-		return 0; //fix me
+	public static int countValue (int[] a, int findMe ) { // Without recursion
+		int count = 0;
+		for (int i = 0; i < a.length; i++){
+			if (a[i] == findMe){
+				count++;
+			}
+		}
+
+		return count;
+
+	}
+
+
+
+	public static int countValueR (int[] a, int findMe ) { // With recursion
+
+		return countValueRHelp(a, findMe, 0, 0);
+
+	}
+
+	public static int countValueRHelp (int[] a, int findMe, int count, int i){
+		if (i == a.length){
+			return count;
+		}
+		
+		if (a[i] == findMe){
+			count++;
+			}
+
+		return countValueRHelp(a, findMe, count, i+1);
 	}
 
 
 	public static void main ( String[] args ) {
 		int[] a = {1, 3, 1};
-		System.out.println(countValue(a, 1));
+		System.out.println(countValueR(a, 1));
 	}
 
 }

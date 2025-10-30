@@ -18,6 +18,15 @@ public class Q06 {
 		//Use the substitution method to show the result of the
 		//following:
 		
-		f(3);
+		System.out.println(f(3));
+
 	}
 }
+//f(3) = f(10)		1
+//f(10) = f(5)		1
+//f(5) = f(16)		1
+//f(16) = f(8)		1
+//f(8) = f(4)		1
+//f(4) = f(2)		1
+//f(2) = f(1)		1
+//f(1) = 1			Base case
